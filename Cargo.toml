@@ -1,0 +1,16 @@
+[package]
+name = "solana-base3-encoding"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+
+[dependencies]
+bitvec = "1.0.1"
+
+[dev-dependencies]
+criterion = { version = "0.6", features = ["html_reports"] }
+
+[[bench]]
+name = "encoding_benchmarks"
+harness = false
